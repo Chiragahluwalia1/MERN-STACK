@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* herre we can use custon variables anywhere in the code
+            we want. */
+            --primary-color:red;
+            --custom-width:300px;
+        }
+       
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            /* now learn how to make custom variables
+            not that these will be used under the given brackets only. */
+            /* --primary-color:red;
+            --custom-width:300px; */
+            background-color: lightcoral;
+            height: 330px;
+            width: var(--custom-width);
+            border:2px solid var(--primary-color);
+            /* overflow: auto; */
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 10px 15px var(--primary-color); */
+            /* box-shadow: 10px 15px 50px brown; it is done using blur radius at the third position */
+            /* box-shadow: 10px 15px 50px 30px brown; */
+            /* box-shadow: inset 10px 15px brown; */
+            /* box-shadow: 10px 15px red,15px 12px green; */
+            
+        }
+        #head1{
+            text-shadow: 2px 3px 1px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="ROAR LOGO MAIN.png" alt="logo"
+            height="100px"
+            width="200px">
+            <h1 id="head1">WELCOME TO ROAR</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi inventore aliquid laborum, nisi eligendi impedit magni sequi minus optio ullam soluta repudiandae esse ipsa eum.</p>
+    
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: none;
+   
+ /* background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%); */
+/* background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% ); */
+background-image: radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );}
+.navcontainer{
+    width: 100vw;
+    min-height: 60px;
+    
+     /* background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
+/* background-image: linear-gradient( 109.6deg,  rgba(254,253,205,1) 11.2%, rgba(163,230,255,1) 91.1% ); */
+/* background-image: linear-gradient( 178.7deg,  rgba(126,184,253,1) 5.6%, rgba(2,71,157,1) 95.3% ); */
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100%;
+}
+#navlist{
+    width: 100%;
+    padding: 15px;
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-shadow:2px 3px 1px black ;
+    color: white;
+}
+a{
+    /* text-decoration: none; */
+    color: white;
+    text-shadow:2px 3px 1px black ;
+
+
+    
+}
+#navitems{
+    display: flex;
+    gap: 30px;
+    /* text-shadow: 2px 3px 1px white; */
+}
+
+.contentbox{
+    width: 75%;
+    margin: auto; 
+    /* border: 1px solid black; */
+    background-color: white ;
+    /* background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 2rem;
+    box-shadow: 0px 0px 30px;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rightbox img{
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.5s linear 0s;
+}
+.rightbox:hover{
+    transform: scale(1.3);
+}
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s linear 0s;
+    box-shadow: 0px 0px 30px;
+}
+.leftbox img{
+    height: 300px;
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+}
+.footerbox{
+    /* background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%); */
+    /* background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%); */
+/* background-image: linear-gradient( 178.7deg,  rgba(126,184,253,1) 5.6%, rgba(2,71,157,1) 95.3% ); */
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );  
+
+    min-height: 30px;
+    text-align: center;
+    width:100%;
+}
+.footerbox p{
+    font-size:2rem;
+    color: white;
+    text-shadow:2px 3px 1px black ;
+
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+  font-size: 2rem;
+}
+ingbox{
+    font-size:10rem; 
+}
+.recipebox{
+
+    font-size: 1.1rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(95, 85, 85, 0.842);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    opacity: 0;
+
+}
+.rightbox .overlay:hover{
+    opacity: 1;
+    
+}
+.rightbox .overlay span{
+    color: white;
+    background-color: #9FACE6;
+}
+.about{
+    background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+height: 100vh;
+width: 100vw;
+    
+}
+.about h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+.about p{
+    font-size: 1.5rem;
+}
